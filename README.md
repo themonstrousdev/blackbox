@@ -5,7 +5,7 @@
 # Black Box Themes
 **Black Box Themes** are Discord Themes that are compatible with BetterDiscord primarily but also compatible with other applications like Beautiful Discord.
 
-The Black Box developers are theme developers that spread their content for free but are grateful for any monetary support you are willing to give.
+The Black Box developers are theme developers that spread their content for free as well as provide support for them in the designated Discord Support server.
 
 All registered Black Box themes are all compatible with the exclusive Black Box plugin that allow for more features on Discord only achievable on JavaScript.
 
