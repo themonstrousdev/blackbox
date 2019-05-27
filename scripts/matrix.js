@@ -10,7 +10,7 @@ var chinese = "01010100011010000110010100100000010000100110110001100001011000110
 //converting the string into an array of single characters
 chinese = chinese.split("");
 
-var font_size = 12;
+var font_size = 13;
 var columns = c.width/font_size; //number of columns for the rain
 //an array of drops - one per column
 var drops = [];

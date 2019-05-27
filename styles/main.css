@@ -28,6 +28,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   font-size: 5vh;
+  width: fit-content;
   font-family: "Product Sans", sans-serif;
   color: #ccc;
 }
@@ -47,4 +48,14 @@ body {
 
 .server:hover {
   letter-spacing: .2vh;
+}
+
+@media all and (orientation:portrait) {
+  #banner {
+    background: url(../assets/transparent-banner.png) center 30vw/auto 30vw no-repeat, url(../assets/screen-bars.png) top left/cover;
+  }
+
+  #comingSoon {
+    font-size: 5vw;
+  }
 }
