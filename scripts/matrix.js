@@ -2,13 +2,13 @@ var c = document.getElementById("matrix");
 var ctx = c.getContext("2d");
 
 //making the canvas full screen
-c.height = window.innerHeight;
-c.width = window.innerWidth;
+c.height = screen.availHeight;
+c.width = screen.availWidth;
 
-//chinese characters - taken from the unicode charset
-var chinese = "01010100011010000110010100100000010000100110110001100001011000110110101100100000010000100110111101111000001000000111011101100101011000100111001101101001011101000110010100100000011010010111001100100000011000110110111101101101011010010110111001100111001000000111001101101111011011110110111000101110";
+//binary characters - translated from ascii
+var binary = "01010100011010000110010100100000010000100110110001100001011000110110101100100000010000100110111101111000001000000111011101100101011000100111001101101001011101000110010100100000011010010111001100100000011000110110111101101101011010010110111001100111001000000111001101101111011011110110111000101110";
 //converting the string into an array of single characters
-chinese = chinese.split("");
+binary = binary.split("");
 
 var font_size = 13;
 var columns = c.width/font_size; //number of columns for the rain
@@ -27,13 +27,13 @@ function draw()
 	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
 	ctx.fillRect(0, 0, c.width, c.height);
 	
-	ctx.fillStyle = "#ccc"; //green text
+	ctx.fillStyle = "#ccc"; //white text
 	ctx.font = font_size + "px arial";
 	//looping over drops
 	for(var i = 0; i < drops.length; i++)
 	{
-		//a random chinese character to print
-		var text = chinese[Math.floor(Math.random()*chinese.length)];
+		//a random binary character to print
+		var text = binary[Math.floor(Math.random()*binary.length)];
 		//x = i*font_size, y = value of drops[i]*font_size
 		ctx.fillText(text, i*font_size, drops[i]*font_size);
 		
